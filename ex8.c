@@ -146,6 +146,7 @@
 int main(int argc, char *argv[])
 {
     int opt; /* return from getopt() */
+    cabeca_t cl; /* a cabeca da lista de nodos do jogo */
 
     IFDEBUG("Starting optarg loop...");
 

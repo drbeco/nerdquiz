@@ -1,5 +1,5 @@
 /***************************************************************************
- *   exN.h                                    Version 20160908.182854      *
+ *   ex8.h                                    Version 20160908.182854      *
  *                                                                         *
  *   Brief description                                                     *
  *   Copyright (C) 2016         by Ruben Carlo Benante                     *
@@ -27,7 +27,7 @@
 
 /* ---------------------------------------------------------------------- */
 /**
- * \file exN.h
+ * \file ex8.h
  * \ingroup GroupUnique
  * \brief Brief description
  * \details This program really do a nice job as a template, and template only!
@@ -92,7 +92,7 @@
 /* #include <libintl.h> */ /* Internationalization / translation */
 /* #include <locale.h> */ /* MACROS LC_ for location specific settings */
 /* #include "libeco.h" */ /* I/O, Math, Sound, Color, Portable Linux/Windows */
-/* #include "exN.h" */ /* To be created for this template if needed */
+/* #include "ex8.h" */ /* To be created for this template if needed */
 
 /* ---------------------------------------------------------------------- */
 /* definitions */
@@ -122,12 +122,61 @@
 
 static int verb = 0; /**< verbose level, global within the file */
 
+/* enumeracao das categorias */
+typedef enum
+{
+    brinquedos,
+    cartoons,
+    ciencia,
+    eventos,
+    famosos,
+    filmes,
+    frases,
+    gadgets,
+    gibis,
+    linguas,
+    literatura,
+    personagens,
+    referencias,
+    seriados
+} cat_t;
+
+/* estrutura de informacao */
+typedef struct
+{
+    char per[SBUFF];
+    char res[SBUFF];
+    cat_t cat;
+    int niv;
+} info_t;
+
+/* estrutura de ponteiros */
+typedef struct
+{
+    struct slista *cat;
+    struct slista *niv;
+} pont_t;
+
+/* o nodo da lista */
+typedef struct slista
+{
+    info_t i; /* um bloco de informacao */
+    pont_t p; /* um bloco de ponteiros */
+} lista_t;
+
+/* o tipo cabeca */
+typedef struct scabeca
+{
+    lista_t *ccat; /* cabeca da lista por categorias */
+    lista_t *cniv; /* cabeca da lista por niveis */
+} cabeca_t;
+
 /* ---------------------------------------------------------------------- */
 /* prototypes */
 
 void help(void); /**< Prints help information and exit */
 void copyr(void); /**< Prints copyright information and exit */
-void exN_init(void);  /**< Initializes some operations before start */
+void ex8_init(void);  /**< Initializes some operations before start */
 
 #endif /* NOT def _EXN_H */
 
