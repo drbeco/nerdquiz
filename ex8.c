@@ -1,8 +1,8 @@
 /***************************************************************************
- *   exN.c                                    Version 20160908.182830      *
+ *   ex8.c                                    Version 20160908.182830      *
  *                                                                         *
- *   Brief description                                                     *
- *   Copyright (C) 2016         by Ruben Carlo Benante                     *
+ *   Nerd Quiz                                                             *
+ *   Copyright (C) 2017         by Ruben Carlo Benante                     *
  ***************************************************************************
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -27,7 +27,7 @@
 
 /* ---------------------------------------------------------------------- */
 /**
- * @file exN.c
+ * @file ex8.c
  * @ingroup GroupUnique
  * @brief Brief description
  * @details This program really do a nice job as a template, and template only!
@@ -60,7 +60,7 @@
 
 /*
  * Instrucoes para compilar:
- *   $gcc exN.c -o exN.x -Wall
+ *   $gcc ex8.c -o ex8.x -Wall
  *        -Wextra -ansi -pedantic-errors -g -O0 -DDEBUG=1 -DVERSION="0.1.160612.142044"
  *   ou preferencialmente inclua um makefile e use:
  *   $make
@@ -73,7 +73,7 @@
  *  * No vi use:
  *      :% !astyle -A1 -s4 -k3 -xj -SCNeUpv
  *  * No linux:
- *      $astlye -A1 -s4 -k3 -xj -SCNeUpv exN.c
+ *      $astlye -A1 -s4 -k3 -xj -SCNeUpv ex8.c
  */
 
 /* ---------------------------------------------------------------------- */
@@ -82,7 +82,7 @@
 #include <stdio.h> /* Standard I/O functions */
 #include <stdlib.h> /* Miscellaneous functions (rand, malloc, srand)*/
 #include <getopt.h> /* get options from system argc/argv */
-#include "exN.h" /* To be created for this template if needed */
+#include "ex8.h" /* To be created for this template if needed */
 
 /* #include <time.h> */ /* Time and date functions */
 /* #include <math.h> */ /* Mathematics functions */
@@ -131,7 +131,7 @@
  *
  * @par Example
  * @code
- *    $./exN -h
+ *    $./ex8 -h
  * @endcode
  *
  * @warning   Be carefull with...
@@ -176,7 +176,7 @@ int main(int argc, char *argv[])
     if(verb)
         printf("Verbose level set at: %d\n", verb);
 
-    exN_init(); /* initialization function */
+    ex8_init(); /* initialization function */
 
     /* ...and we are done */
     /* Write your code here... */
@@ -200,8 +200,8 @@ int main(int argc, char *argv[])
 void help(void)
 {
     IFDEBUG("help()");
-    printf("%s - %s\n", "exN", "Brief description");
-    printf("\nUsage: %s [-h|-v]\n", "exN");
+    printf("%s - %s\n", "ex8", "Brief description");
+    printf("\nUsage: %s [-h|-v]\n", "ex8");
     printf("\nOptions:\n");
     printf("\t-h,  --help\n\t\tShow this help.\n");
     printf("\t-V,  --version\n\t\tShow version and copyright information.\n");
@@ -227,7 +227,7 @@ void help(void)
 void copyr(void)
 {
     IFDEBUG("copyr()");
-    printf("%s - Version %s\n", "exN", VERSION);
+    printf("%s - Version %s\n", "ex8", VERSION);
     printf("\nCopyright (C) %d %s <%s>, GNU GPL version 2 <http://gnu.org/licenses/gpl.html>. This  is  free  software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law. USE IT AS IT IS. The author takes no responsability to any damage this software may inflige in your data.\n\n", 2016, "Ruben Carlo Benante", "rcb@beco.cc");
     if(verb > 3) printf("copyr(): Verbose: %d\n", verb); /* -vvvv */
     exit(EXIT_FAILURE);
@@ -274,9 +274,9 @@ void copyr(void)
  * @copyright Use this tag only if not the same as the whole file
  *
  */
-void exN_init(void)
+void ex8_init(void)
 {
-    IFDEBUG("exN_init()");
+    IFDEBUG("ex8_init()");
     /* initialization */
     return;
 }
