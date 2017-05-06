@@ -1,5 +1,5 @@
 #***************************************************************************
-#*   Autoversion makefile                     v.20170506.183020     (-O0%) *
+#*   Autoversion makefile                     v.20170506.205016   (-O0%-s) *
 #*   Copyright (C) 2014-2017 by Ruben Carlo Benante <rcb@beco.cc>          *
 #*                                                                         *
 #*   This makefile sets BUILD and allows to set MAJOR.MINOR version,       *
@@ -189,10 +189,10 @@ endif
 # Inclui VERSION, data de BUILD e DEBUG (opcional).
 %.x : %.c $(OBJ) $(SRC)
 	-$(CC) $(CFLAGS) $(CPPFLAGS) $(LDLIBS) $^ -o $@ 2>&1 | tee errors.err
-	@echo $@ version $(VERSION) > VERSION
 ifeq "$(CCCOLOR)" "always"
 	@sed -i -r "s/\x1B\[(([0-9]+)(;[0-9]+)*)?[m,K,H,f,J]//g" errors.err
 endif
+	-@[ ! -s errors.err ] && echo $@ version $(VERSION) > VERSION
 
 # override built-in rules for mathing everything (exactly the same rule as %.x above)
 % : %.c $(OBJ) $(SRC)
@@ -201,6 +201,7 @@ endif
 ifeq "$(CCCOLOR)" "always"
 	@sed -i -r "s/\x1B\[(([0-9]+)(;[0-9]+)*)?[m,K,H,f,J]//g" errors.err
 endif
+	-@[ ! -s errors.err ] && echo $@ version $(VERSION) > VERSION
 
 nomatch :
 	@echo 'makefile error: no rules for the given goal(s)' $(warning nomatch)
