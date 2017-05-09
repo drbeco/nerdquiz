@@ -174,6 +174,7 @@ int main(int argc, char *argv[])
                 return EXIT_FAILURE;
         }
 
+    printf("Por favor, insira o numero da opcao desejada:\n(1)Ler Arquivo\n(2)Inserir Novo Novo\n(3)Buscar Um Nodo\n(4)Alterar Um Nodo\n(5)Apagar Um Nodo\n(6)Jogar\n(7)Sair\n");
     if(verb)
         printf("Verbose level set at: %d\n", verb);
 
