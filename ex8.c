@@ -146,6 +146,7 @@
 int main(int argc, char *argv[])
 {
     int opt; /* return from getopt() */
+    int menu; /*variavel que recebe a opcao do menu*/
     cabeca_t cl; /* a cabeca da lista de nodos do jogo */
 
     IFDEBUG("Starting optarg loop...");
@@ -174,7 +175,29 @@ int main(int argc, char *argv[])
                 return EXIT_FAILURE;
         }
 
-    printf("Por favor, insira o numero da opcao desejada:\n(1)Ler Arquivo\n(2)Inserir Novo Novo\n(3)Buscar Um Nodo\n(4)Alterar Um Nodo\n(5)Apagar Um Nodo\n(6)Jogar\n(7)Sair\n");
+    printf("Por favor, insira o numero da opcao desejada:\n(1)Ler\n(2)Inserir\n(3)Buscar\n(4)Alterar\n(5)Apagar\n(6)Jogar\n(7)Sair\n");
+    scanf("%d", &menu);
+    if(menu >= 0 && menu <= 7)
+    {
+        switch(menu)
+        {
+            case 1:/*ler arquivo*/
+                break;
+            case 2:/*inserir*/
+                break;
+            case 3:/*buscar*/
+                break;
+            case 4:/*alterar*/
+                break;
+            case 5:/*apagar*/
+                break;
+            case 6:/*jogar*/
+                break;
+            case 7:/*sair*/
+                break;
+        }
+    }
+
     if(verb)
         printf("Verbose level set at: %d\n", verb);
 
