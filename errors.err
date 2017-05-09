@@ -1,0 +1,4 @@
+ex8.c: In function ‘main’:
+ex8.c:150:14: warning: unused variable ‘cl’ [-Wunused-variable]
+     cabeca_t cl; /* a cabeca da lista de nodos do jogo */
+              ^
