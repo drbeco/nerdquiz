@@ -122,7 +122,13 @@ E finalmente, a opção 3 aborta o menu de sair, voltando ao menu principal.
 
 Este é um programa sobre listas encadeadas e alocação de memória. As perguntas inseridas não fazem parte do programa, cujo fim é apenas educacional. 
 
-As perguntas do baralho NERD QUIZ são de conhecimento público, mas as categorias e os níveis não, e não tem (ainda) autorização dos autores para serem divulgadas, portanto este repositório é privado e não deve ser divulgado.
+As questões de conhecimento público sobre temas famosos "nerds" (filmes, conhecimento científico e ficção, etc.) são encontradas em diversos foruns e podem ser utilizadas como "dados" para fomentar o programa.
 
-Espero no futuro próximo conseguir autorização do autor para o uso das questões. Enquanto isso, pode-se utilizar o programa com quaisquer questões de domínio público. 
+As perguntas usadas aqui como exemplo, bem como a classificação em categorias e níveis, são retiradas do baralho **NERD QUIZ**, e tem autorização dos autores para seu uso na forma deste programa educacional. Para outros usos, contate diretamente a editora em editorial@pandabooks.com.br
+
+* Livro/Baralho Nerd Quiz, 2013
+* Autores: Rosana Rios e Luis Flávio Fernandes
+* ISBN 978-85-7888-265-5
+
+Este repositório e o trabalho aqui desenvolvido não é responsável e nem dá autorização para trabalhos derivados.
 
