@@ -126,9 +126,11 @@ As questões de conhecimento público sobre temas famosos "nerds" (filmes, conhe
 
 As perguntas usadas aqui como exemplo, bem como a classificação em categorias e níveis, são retiradas do baralho **NERD QUIZ**, e tem autorização dos autores para seu uso na forma deste programa educacional. Para outros usos, contate diretamente a editora em editorial@pandabooks.com.br
 
-* Livro/Baralho Nerd Quiz, 2013
-* Autores: Rosana Rios e Luis Flávio Fernandes
-* ISBN 978-85-7888-265-5
+* Referência:
+    - FERNANDES, Luís Flavio & RIOS, Rosana
+    - Nerd Quiz, São Paulo, Panda Books, 2013
+    - www.pandabooks.com.br
+    - ISBN 978-85-7888-265-5
 
 Este repositório e o trabalho aqui desenvolvido não é responsável e nem dá autorização para trabalhos derivados.
 
